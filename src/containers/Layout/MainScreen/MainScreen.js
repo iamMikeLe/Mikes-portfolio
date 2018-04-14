@@ -14,6 +14,8 @@ import contactImage from "../../../images/contact.png";
 import meImage from "../../../images/me.png";
 import aboutImage from "../../../images/about.png";
 import backgroundImage from "../../../images/background.jpg";
+import inImage from "../../../images/in.png";
+import calcImage from "../../../images/calc.png";
 
 //Pages
 /* import Home from "../../Components/Carousel/HomeCarousel"; */
@@ -61,24 +63,24 @@ class MainScreen extends Component {
             <div className="main-window" style={backgroundStyle}>
                 <Draggable bounds="parent">
                     <div className="main-icons main-icons-me">
-                        <img src={meImage} alt="developer" height="50" width="50" />
-                        <span><Text textAlign="center" size="14" color="white">About</Text></span>
+                        <img src={inImage} alt="developer" height="50" width="50" />
+                        <span><Text textAlign="center" size="14" color="white">LinkedIn</Text></span>
                         <div className="main-icon-overlay"></div>
                     </div>
                 </Draggable>
 
                 <Draggable bounds="parent">
                     <div className="main-icons main-icons-cv">
-                        <img src={aboutImage} alt="developer" /* height="50" width="50" */ />
-                        <span><Text textAlign="center" size="14" color="white">CV.pdf</Text></span>
+                        <img src={aboutImage} alt="developer"  height="50" width="50" />
+                        <span><Text textAlign="center" size="14" color="white">CV</Text></span>
                         <div className="main-icon-overlay"></div>
                     </div>
                 </Draggable>
 
-                <Draggable bounds="parent">
-                    <div className="main-icons main-icons-folder" onDoubleClick={this.onOpenFolder}>
-                        <img src={folderImage} alt="developer" height="50" width="50" />
-                        <span><Text textAlign="center" size="14" color="white">Projects</Text></span>
+                { /* <Draggable bounds="parent">
+                    <div className="main-icons main-icons-folder">
+                        <img src={calcImage} alt="developer" height="50" width="50" />
+                        <span><Text textAlign="center" size="14" color="white">Calculator</Text></span>
                         <div className="main-icon-overlay"></div>
                     </div>
                 </Draggable>
@@ -89,16 +91,14 @@ class MainScreen extends Component {
                         <span><Text textAlign="center" size="14" color="white">Contacts</Text></span>
                         <div className="main-icon-overlay"></div>
                     </div>
-                </Draggable>
+                </Draggable> */ }
 
                 {projectsFile}
 
                 <Dock>
                     <img style = {pd} onClick = { () => ( alert ("hello") )}  src={meImage}/>
-                    <img style = {pd} src = {aboutImage}/>
                     <img style = {pd} onClick={this.onOpenFolder} src = {folderImage}/>
                     <img style = {pd} src = {contactImage}/>
-                    <img style = {pd} src = "https://raw.githubusercontent.com/Sherryer/Sherry-npm/master/static/images/5.png"/>
                 </Dock>
             </div>
 
