@@ -34,3 +34,15 @@
     top: 320px;
     left: 20px;
 }
+
+.main-icon-overlay{
+    height: 70px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 69px;
+}
+
+.main-icon-overlay:active{
+    background-color: rgba(255,255,255,.3);
+}

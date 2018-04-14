@@ -9,7 +9,7 @@ import Dock from "react-apple-menu";
 //components
 import ProjectsFolder from "../../../components/ProjectsFolder/ProjectsFolder";
 //images
-import folderImage from "../../../images/folder82.png";
+import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";
 import meImage from "../../../images/me.png";
 import aboutImage from "../../../images/about.png";
@@ -63,6 +63,7 @@ class MainScreen extends Component {
                     <div className="main-icons main-icons-me">
                         <img src={meImage} alt="developer" height="50" width="50" />
                         <span><Text textAlign="center" size="14" color="white">About</Text></span>
+                        <div className="main-icon-overlay"></div>
                     </div>
                 </Draggable>
 
@@ -70,6 +71,7 @@ class MainScreen extends Component {
                     <div className="main-icons main-icons-cv">
                         <img src={aboutImage} alt="developer" /* height="50" width="50" */ />
                         <span><Text textAlign="center" size="14" color="white">CV.pdf</Text></span>
+                        <div className="main-icon-overlay"></div>
                     </div>
                 </Draggable>
 
@@ -77,6 +79,7 @@ class MainScreen extends Component {
                     <div className="main-icons main-icons-folder" onDoubleClick={this.onOpenFolder}>
                         <img src={folderImage} alt="developer" height="50" width="50" />
                         <span><Text textAlign="center" size="14" color="white">Projects</Text></span>
+                        <div className="main-icon-overlay"></div>
                     </div>
                 </Draggable>
 
@@ -84,16 +87,17 @@ class MainScreen extends Component {
                     <div className="main-icons main-icons-contact">
                         <img src={contactImage} alt="developer" height="50" width="50" />
                         <span><Text textAlign="center" size="14" color="white">Contacts</Text></span>
+                        <div className="main-icon-overlay"></div>
                     </div>
                 </Draggable>
 
                 {projectsFile}
 
                 <Dock>
-                    <img style = {pd} onClick = { () => ( alert ("hello") )}  src="https://raw.githubusercontent.com/Sherryer/Sherry-npm/master/static/images/1.png"/>
-                    <img style = {pd} onClick={this.onOpenFolder} src = "https://raw.githubusercontent.com/Sherryer/Sherry-npm/master/static/images/2.png"/>
-                    <img style = {pd} src = "https://raw.githubusercontent.com/Sherryer/Sherry-npm/master/static/images/3.png"/>
-                    <img style = {pd} src = "https://raw.githubusercontent.com/Sherryer/Sherry-npm/master/static/images/4.png"/>
+                    <img style = {pd} onClick = { () => ( alert ("hello") )}  src={meImage}/>
+                    <img style = {pd} src = {aboutImage}/>
+                    <img style = {pd} onClick={this.onOpenFolder} src = {folderImage}/>
+                    <img style = {pd} src = {contactImage}/>
                     <img style = {pd} src = "https://raw.githubusercontent.com/Sherryer/Sherry-npm/master/static/images/5.png"/>
                 </Dock>
             </div>
