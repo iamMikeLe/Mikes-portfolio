@@ -6,6 +6,7 @@ import "./MainScreen.css";
 import { Text } from 'react-desktop/macOs';
 import Dock from "react-apple-menu";
 import Preloader from "./Preloader/Preloader";
+import Typist from 'react-typist';
 
 //components
 import ProjectsFolder from "../../../components/ProjectsFolder/ProjectsFolder";
@@ -75,7 +76,13 @@ class MainScreen extends Component {
                     <Preloader />
                 </div>
                 <div className="main-preloader-text">
-                    <Text textAlign="center" size="14" color="white">Loading Mikes portfolio</Text>
+                    <Text textAlign="center" size="14" color="white">
+                        <Typist>
+                            <span>Loading Mike's portfolio...</span>
+                            {/* <Typist.Backspace count={23} delay={200} />
+        <span>Loading Mikes portfolio</span> */}
+                        </Typist>
+                    </Text>
                 </div>
             </div>
         );
