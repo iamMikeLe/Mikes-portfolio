@@ -111,7 +111,8 @@ class MainScreen extends Component {
                     </Draggable>
 
                     {projectsFile}
-                    { WelcomeConsole}
+                    <WelcomeConsole/>
+
                     <Dock>
                         <img style={pd} src={meImage} />
                         <img style={pd} onClick={this.onOpenFolder} src={folderImage} />

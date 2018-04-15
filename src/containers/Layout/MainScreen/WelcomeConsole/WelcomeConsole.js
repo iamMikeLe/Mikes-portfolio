@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import { Window, TitleBar, Text } from 'react-desktop/macOs';
 
-
-export default class Preloader extends Component {
+export default class WelcomeConsole extends Component {
     render() {
         return (
-            <h1>Welcome console</h1>
+            <div className="console-style">
+                <Window
+                    chrome
+                    height="300px"
+                    width="200px"
+                    padding="10px"
+                >
+                    <TitleBar title="Console" controls />
+                    <Text>Hello World</Text>
+                </Window>
+            </div>
         );
     }
 }
