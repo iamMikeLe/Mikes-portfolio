@@ -10,7 +10,7 @@ import Typist from 'react-typist';
 //components
 import Preloader from "./Preloader/Preloader";
 import ProjectsFolder from "../../../components/ProjectsFolder/ProjectsFolder";
-import WelcomeConsole from "./WelcomeConsole/WelcomeConsole";
+import WelcomeConsole from "../../../components/WelcomeConsole/WelcomeConsole";
 //images
 import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";

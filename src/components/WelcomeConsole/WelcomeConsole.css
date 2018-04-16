@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+.console-style {
+    position: absolute;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 26px;
+}

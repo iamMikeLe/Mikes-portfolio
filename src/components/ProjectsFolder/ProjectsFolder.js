@@ -16,6 +16,7 @@ componentDidMount() {
     return (
       <Draggable handle=".folder-mover" bounds="parent" defaultPosition={{ x: 30, y: 30 }}>
         <Window
+          className="project-folder-style"
           chrome
           height="600px"
           padding="10px"
