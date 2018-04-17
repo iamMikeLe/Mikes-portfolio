@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import "./WebProjetcs.css";
+import "./PersonalProjetcs.css";
 
 //images
 import ViewVo from "../../../../images/vvlogo.png";
@@ -10,7 +10,7 @@ import Dmp from "../../../../images/dmp.png";
 import Solis from "../../../../images/solis.png";
 import Pemberton from "../../../../images/pemberton.png";
 
-class WebProjects extends Component {
+class PersonalProjects extends Component {
     render() {
         const fn = function () {
             /* do your action */
@@ -55,4 +55,4 @@ class WebProjects extends Component {
     };
 }
 
-export default WebProjects; 
+export default PersonalProjects; 
