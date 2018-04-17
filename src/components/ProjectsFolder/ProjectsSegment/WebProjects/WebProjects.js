@@ -9,40 +9,29 @@ class Layout extends Component {
             <div>
                 <div className="web-projects-icons">
                     <img src={ViewVo} alt="View Vo" />
-                    Content 1 
+                    <span>ViewVo</span> 
                 </div>
                 <div className="web-projects-icons">
                     <img src={ViewVo} alt="View Vo" />
-                    Content 1 
+                    <span>Fibodo</span>
                 </div>
                 <div className="web-projects-icons">
                     <img src={ViewVo} alt="View Vo" />
-                    Content 1 
+                    <span>MoonROK</span>
                 </div>
                 <div className="web-projects-icons">
                     <img src={ViewVo} alt="View Vo" />
-                    Content 1 
+                    <span>DMP Dental</span> 
                 </div>
                 <div className="web-projects-icons">
                     <img src={ViewVo} alt="View Vo" />
-                    Content 1 
+                    <span>Solis Marine</span> 
                 </div>
                 <div className="web-projects-icons">
                     <img src={ViewVo} alt="View Vo" />
-                    Content 1 
+                    <span>Pemberton Capital</span> 
                 </div>
-                <div className="web-projects-icons">
-                    <img src={ViewVo} alt="View Vo" />
-                    Content 1 
-                </div>
-                <div className="web-projects-icons">
-                    <img src={ViewVo} alt="View Vo" />
-                    Content 1 
-                </div>
-                <div className="web-projects-icons">
-                    <img src={ViewVo} alt="View Vo" />
-                    Content 1 
-                </div>
+                
             </div>
         );
     };

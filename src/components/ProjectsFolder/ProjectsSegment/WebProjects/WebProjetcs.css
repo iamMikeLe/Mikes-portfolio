@@ -3,6 +3,14 @@
     text-align: center;
     width: 70px;
     font-size: 15px;
-    float: left;
+    display: inline-block;
     margin-right: 20px;
 }
+
+/* .web-projects-container {
+    width: 100%;
+}
+
+.web-projects-sub-container {
+    margin: 0 auto;
+} */
