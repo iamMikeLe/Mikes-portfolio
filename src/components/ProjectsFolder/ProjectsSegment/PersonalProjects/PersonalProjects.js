@@ -4,24 +4,26 @@ import "./PersonalProjetcs.css";
 
 //images
 import Shrooms from "../../../../images/shrooms.png";
+import ShroomsScreen from "../../../../images/shroomsScreen.png";
+
 import Hangry from "../../../../images/hangry.png";
+import HangryScreen from "../../../../images/hangryScreen.png";
 
 
 
 class PersonalProjects extends Component {
     state = {
         selected: 0,
+        selectedScreen: ShroomsScreen,
         projects: [
             {   
                 title: "Shrooms",
                 link: "https://github.com/iamMikeLe/Shrooms",
-                image: "https://firebasestorage.googleapis.com/v0/b/mike-s-portfolip.appspot.com/o/viewVo.png?alt=media&token=834a59f6-7a5f-4c92-8159-6bbb33d48663",
                 description: "Turn based tile game build using Html5, CSS3, Canvas, object oriented Javascript and JQuery" 
             },
             { 
                 title: "Hangry",
                 link: "https://github.com/iamMikeLe/Hangry",
-                image: "https://firebasestorage.googleapis.com/v0/b/mike-s-portfolip.appspot.com/o/phoneFi.png?alt=media&token=f26e6b8d-899a-44b1-a7b7-84dc6bdb437d",
                 description: "Restaurant review web application build using React and google API to show nearby restaurant. Users can browse/Filter nearby restaurant, leave comments and review." 
             },
             
@@ -34,6 +36,23 @@ class PersonalProjects extends Component {
             selected: selectedElement
         });
         document.querySelector(".web-projects-icon-selector").children[selectedElement].classList.add('web-project-icon-selected');
+    
+        switch(selectedElement){
+            case 0:
+            this.setState({
+                selectedScreen: ShroomsScreen
+            });
+            break;
+
+            case 1:
+            this.setState({
+                selectedScreen: HangryScreen
+            });
+            break;
+
+            default:
+            console.log("error, element does not exist");
+        }
     }
 
     componentDidMount() {
@@ -59,8 +78,8 @@ class PersonalProjects extends Component {
                 </div>
                 <div className="web-projects-info">
                     <div className="web-projects-info-left">
-                        <div style={{marginBottom: "10px"}}> <img src={this.state.projects[this.state.selected].image} alt="View Vo" /></div>
-                        <div><a href={this.state.projects[this.state.selected].link} target="_blank" rel="noopener noreferrer">{">>> Website here <<<"}</a></div>
+                        <div style={{marginBottom: "10px"}}> <img src={this.state.selectedScreen} alt="View Vo" /></div>
+                        <div><a href={this.state.projects[this.state.selected].link} target="_blank" rel="noopener noreferrer">{">>> Github link <<<"}</a></div>
                     </div>
 
                     <div className="web-projects-info-right">
