@@ -16,9 +16,8 @@ import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";
 import meImage from "../../../images/me.png";
 import aboutImage from "../../../images/about.png";
-import backgroundImage from "../../../images/background.jpg";
+import backgroundImage from "../../../images/backgroundCover.png";
 import inImage from "../../../images/in.png";
-import calcImage from "../../../images/calc.png";
 import ghImage from "../../../images/gh.png";
 
 //Pages

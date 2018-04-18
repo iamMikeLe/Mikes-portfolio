@@ -4,25 +4,34 @@ import "./WebProjetcs.css";
 
 //images
 import ViewVo from "../../../../images/vvlogo.png";
-import Vvcover from "../../../../images/vvcover.png";
+import ViewvoScreen from "../../../../images/viewvoScreen.png";
+
 import Fibodo from "../../../../images/fibodo.png";
+import FibodoScreen from "../../../../images/fibodoScreen.png";
+
 import Moonrok from "../../../../images/moonrok.png";
+import MoonrokScreen from "../../../../images/moonrokScreen.png";
+
 import Dmp from "../../../../images/dmp.png";
+import DmpScreen from "../../../../images/dmpScreen.png";
+
 import Solis from "../../../../images/solis.png";
+import SolisScreen from "../../../../images/solisScreen.png";
+
 import Pemberton from "../../../../images/pemberton.png";
+import PembertonScreen from "../../../../images/pembertonScreen.png";
 
 class WebProjects extends Component {
     state = {
         selected: 0,
+        selectedScreen: ViewvoScreen,
         projects: [
             {   title: "ViewVo",
                 link: "http://viewvo.com",
-                image: "https://firebasestorage.googleapis.com/v0/b/mike-s-portfolip.appspot.com/o/viewVo.png?alt=media&token=834a59f6-7a5f-4c92-8159-6bbb33d48663",
                 description: "ViewVo is a Web Application that provides job shadowing opportunities. Users search different kinds of jobs and activities, book time with a professional mentor and follow him for agreed duration of time to learn from him/her. In case you are a professional, who would like to pass knowledge to someone else. You can apply to be a mentor, Make some money or choose to donate it to Charity!" },
             { 
                 title: "Fibodo",
                 link: "http://fibodo.com",
-                image: "https://firebasestorage.googleapis.com/v0/b/mike-s-portfolip.appspot.com/o/phoneFi.png?alt=media&token=f26e6b8d-899a-44b1-a7b7-84dc6bdb437d",
                 description: "I worked on Fibodo IOS application as a Project Manager. Fibodo is a sport oriented app for users looking for activities around them. They can search and book activities, connect and chat with organizers and much more!" },
             { 
                 title: "MoonROK",
@@ -53,11 +62,54 @@ class WebProjects extends Component {
             selected: selectedElement
         });
         document.querySelector(".web-projects-icon-selector").children[selectedElement].classList.add('web-project-icon-selected');
+
+        switch(selectedElement){
+            case 0:
+            this.setState({
+                selectedScreen: ViewvoScreen
+            });
+            break;
+
+            case 1:
+            this.setState({
+                selectedScreen: FibodoScreen
+            });
+            break;
+
+            case 2:
+            this.setState({
+                selectedScreen: MoonrokScreen
+            });
+            break;
+
+            case 3:
+            this.setState({
+                selectedScreen: DmpScreen
+            });
+            break;
+
+            case 4:
+            this.setState({
+                selectedScreen: SolisScreen
+            });
+            break;
+
+            case 5:
+            this.setState({
+                selectedScreen: PembertonScreen
+            });
+            break;
+
+            default:
+            console.log("error, element does not exist");
+        }
     }
 
     componentDidMount() {
         document.querySelector(".web-projects-icon-selector").children[this.state.selected].classList.add('web-project-icon-selected');
     }
+
+    
 
     render() {
         return (
@@ -89,16 +141,10 @@ class WebProjects extends Component {
                         <div className="web-projects-title">
                             <p>S. Marine</p>
                         </div></div>
-                    <div className="web-projects-icons" onClick={() => { this.onSelect(5) }}>
-                        <img src={Pemberton} alt="View Vo" height="50" width="50" />
-                        <div className="web-projects-title">
-                            <p>P. Capital</p>
-                        </div>
-                    </div>
                 </div>
                 <div className="web-projects-info">
                     <div className="web-projects-info-left">
-                        <div style={{marginBottom: "10px"}}> <img src={this.state.projects[this.state.selected].image} alt="View Vo" /></div>
+                        <div style={{marginBottom: "10px"}}> <img src={this.state.selectedScreen} alt="View Vo" /></div>
                         <div><a href={this.state.projects[this.state.selected].link} target="_blank" rel="noopener noreferrer">{">>> Website here <<<"}</a></div>
                     </div>
 
