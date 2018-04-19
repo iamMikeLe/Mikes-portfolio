@@ -10,6 +10,7 @@ import Typist from 'react-typist';
 //components
 import Preloader from "./Preloader/Preloader";
 import ProjectsFolder from "../../../components/ProjectsFolder/ProjectsFolder";
+import AboutMike from "../../../components/AboutMike/AboutMike";
 import WelcomeConsole from "../../../components/WelcomeConsole/WelcomeConsole";
 //images
 import folderImage from "../../../images/folder.png";
@@ -20,13 +21,6 @@ import backgroundImage from "../../../images/backgroundCover.png";
 import inImage from "../../../images/in.png";
 import ghImage from "../../../images/gh.png";
 
-//Pages
-/* import Home from "../../Components/Carousel/HomeCarousel"; */
-/* import Navigation from "../../components/Navigation/Navigation.js";
-import PageOne from "./PageOne/PageOne";
-import PageTwo from "./PageTwo/PageTwo";
- */
-
 const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`
     /* backgroundColor: "#323437" */
@@ -35,19 +29,19 @@ const backgroundStyle = {
 
 class MainScreen extends Component {
     state = {
-        isOpen: false,
+        isFolderOpen: false,
         isLoaded: false
     }
 
     onCloseFolder = () => {
         this.setState({
-            isOpen: false
+            isFolderOpen: false
         });
     }
 
     onOpenFolder = () => {
         this.setState({
-            isOpen: true
+            isFolderOpen: true
         });
     }
 
@@ -63,7 +57,7 @@ class MainScreen extends Component {
         let pd = { padding: "8px 0", cursor: "pointer", margin: "0 8px" };
         let projectsFile = null;
 
-        if (this.state.isOpen) {
+        if (this.state.isFolderOpen) {
             projectsFile = (
                 <ProjectsFolder
                     onClose={this.onCloseFolder}
@@ -81,7 +75,7 @@ class MainScreen extends Component {
                         <Typist>
                             <span>Loading Mike's portfolio...</span>
                             {/* <Typist.Backspace count={23} delay={200} />
-        <span>Loading Mikes portfolio</span> */}
+                                <span>Loading Mikes portfolio</span> */}
                         </Typist>
                     </Text>
                 </div>
@@ -108,7 +102,7 @@ class MainScreen extends Component {
                             <div className="main-icon-overlay"></div>
                         </div>
                     </Draggable>
-
+                    <AboutMike/>
                     {projectsFile}
                     <WelcomeConsole/>
 
