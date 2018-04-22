@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { Window, TitleBar, SegmentedControl, SegmentedControlItem, Text } from 'react-desktop/macOs';
 import Draggable, { DraggableCore } from 'react-draggable';
 import "./AboutMike.css";
-import ProfilePicture from "../../images/profilePicture.png"
+import ProfilePicture from "../../images/profilePicture.png";
+import ProjectPicture from "../../images/code.png";
+import PatiencePicture from "../../images/patience.png"
+import LanguagePicture from "../../images/language.png"
+import CatPicture from "../../images/cat.png"
 
 //componenets
 /* import Segment from "./ProjectsSegment/ProjectsSegment"; */
@@ -78,7 +82,69 @@ export default class AboutMike extends Component {
                                 </div>
 
                                 <div className="AboutMike-funFacts-row">
-                                    <div className="AboutMike-funFacts-title">Fun Fact</div>
+                                    <div className="AboutMike-funFacts-title">Random Fact</div>
+                                    <div className="AboutMike-funFacts-content">
+
+                                        <div className="AboutMike-funFacts-content-1">
+                                            <div className="AboutMike-funFacts-content-2">
+
+                                                <div className="AboutMike-funFacts-content-3">
+                                                    <div className="AboutMike-funFacts-icon">
+                                                        <img src={ProjectPicture} width="40px" />
+                                                    </div>
+                                                </div>
+                                                <div className="AboutMike-funFacts-content-4">
+                                                    18 Projects worked on
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div className="AboutMike-funFacts-content-1">
+                                            <div className="AboutMike-funFacts-content-2">
+
+                                                <div className="AboutMike-funFacts-content-3">
+                                                    <div className="AboutMike-funFacts-icon">
+                                                    <img src={PatiencePicture} width="40px" />
+                                                    </div>
+                                                </div>
+                                                <div className="AboutMike-funFacts-content-4">
+                                                    high level of patience
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div className="AboutMike-funFacts-content-1">
+                                            <div className="AboutMike-funFacts-content-2">
+
+                                                <div className="AboutMike-funFacts-content-3">
+                                                    <div className="AboutMike-funFacts-icon">
+                                                    <img src={LanguagePicture} width="40px" />
+                                                    </div>
+                                                </div>
+                                                <div className="AboutMike-funFacts-content-4">
+                                                    2 Mother languages
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div className="AboutMike-funFacts-content-1">
+                                            <div className="AboutMike-funFacts-content-2">
+
+                                                <div className="AboutMike-funFacts-content-3">
+                                                    <div className="AboutMike-funFacts-icon">
+                                                        <img src={CatPicture} width="40px" />
+                                                    </div>
+                                                </div>
+                                                <div className="AboutMike-funFacts-content-4">
+                                                    Cat person
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
