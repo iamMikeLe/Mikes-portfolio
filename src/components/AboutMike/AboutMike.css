@@ -578,3 +578,63 @@
     background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
     background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 }
+
+.AboutMike-resume-col ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-col ul li{
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.AboutMike-skill-name{
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #626262;
+    box-sizing: border-box;
+}
+
+.AboutMike-skill-progress{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #d8dbe2;
+    box-sizing: border-box;
+}
+
+.AboutMike-skill-percentage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: #0856c1;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    box-sizing: border-box;
+}
+
+.AboutMike-skill-li-border:after{
+    left: -20px !important;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
