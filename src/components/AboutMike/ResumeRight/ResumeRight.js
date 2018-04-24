@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Scrollbars } from 'react-custom-scrollbars';
+
 import ProjectPicture from "../../../images/code.png";
 import PatiencePicture from "../../../images/patience.png"
 import LanguagePicture from "../../../images/language.png"
@@ -10,6 +12,8 @@ class ResumeRight extends Component {
     render() {
         return (
             <div className="AboutMike-card-about">
+
+                <Scrollbars>
                             <div className="AboutMike-card-about-inner">
                                 <div className="AboutMike-card-about-content">
 
@@ -227,6 +231,8 @@ class ResumeRight extends Component {
 
                                 </div>
                             </div>
+
+                            </Scrollbars>
                         </div>
         );
     };

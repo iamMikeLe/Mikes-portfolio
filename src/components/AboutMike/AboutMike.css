@@ -1,6 +1,7 @@
 .AboutMike-card{
     width: 480px;
     height: 600px;
+    z-index: 20;
     border-radius: 4px;
     background-color: beige;
     position: relative;
@@ -9,7 +10,7 @@
 .AboutMike-card:before {
     content: '';
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -146,6 +147,7 @@
 .AboutMike-card-buttons .lnk{
     position: relative;
     float: left;
+    cursor: pointer;
     width: 50%;
     height: 70px;
     line-height: 70px;
@@ -188,7 +190,6 @@
 .AboutMike-card-about-inner{
     padding: 30px 30px 30px 60px;
     position: relative;
-    overflow-y: scroll;
     width: auto;
     height: 510px;
 }
@@ -637,4 +638,12 @@
     background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
     background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
     background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-nav-color{
+    color:#0856c1 !important;
+}
+
+.AboutMike-card-buttons .lnk:hover{
+    color:#0856c1 !important;
 }

@@ -11,13 +11,41 @@ import ProfilePicture from "../../images/profilePicture.png";
 /* import Segment from "./ProjectsSegment/ProjectsSegment"; */
 
 export default class AboutMike extends Component {
+    state = {
+        aboutMike: true
+    }
+
+    aboutHandler = () => {
+        this.setState({
+            aboutMike: true
+        });
+        document.querySelector('.AboutMike-card-buttons').children[0].classList.add("AboutMike-nav-color");
+        document.querySelector('.AboutMike-card-buttons').children[1].classList.remove("AboutMike-nav-color");
+    }
+
+    resumeHandler = () => {
+        this.setState({
+            aboutMike: false
+        });
+        document.querySelector('.AboutMike-card-buttons').children[1].classList.add("AboutMike-nav-color");
+        document.querySelector('.AboutMike-card-buttons').children[0].classList.remove("AboutMike-nav-color");
+    }
+
 
     componentDidMount() {
-        document.querySelector('.mover').children[1].style.cursor = "all-scroll";
+            document.querySelector('.mover').children[1].style.cursor = "all-scroll";
         }
 
     render() {
         
+        let cardDisplay = null;
+        if(this.state.aboutMike){
+            cardDisplay = (<AboutMikeRight/>);
+        }
+        else{
+            cardDisplay =(<ResumeRight/>);
+        }
+
         return (
             <Draggable handle=".folder-mover" bounds="parent" defaultPosition={{ x: 15, y: 15 }}>
                 <Window
@@ -39,22 +67,19 @@ export default class AboutMike extends Component {
                                 <div className="AboutMike-card-title">Mike Le</div>
                                 <div className="AboutMike-card-subtitle">Front-End Developer</div>
                                 <div className="AboutMike-card-buttons">
-                                    <a href="#" className="lnk lnkBefore">
+                                    <div className="lnk lnkBefore AboutMike-nav-color" onClick={this.aboutHandler}>
                                         <span className="AboutMike-card-buttons-text">About Mike</span>
                                         
-                                    </a>
-                                    <a href="#" className="lnk discover">
+                                    </div>
+                                    <div className="lnk discover" onClick={this.resumeHandler}>
                                         <span className="AboutMike-card-buttons-text">Resume</span>
                                         
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/*Right side*/}
-                        <ResumeRight/>
-                        
-                        {/*<AboutMikeRight/>*/}
+                        {cardDisplay}
                     </div>
 
                 </Window>

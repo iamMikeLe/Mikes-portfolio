@@ -30,6 +30,7 @@ const backgroundStyle = {
 class MainScreen extends Component {
     state = {
         isFolderOpen: false,
+        isMikeFolderOpen: false,
         isLoaded: false
     }
 
@@ -45,6 +46,18 @@ class MainScreen extends Component {
         });
     }
 
+    onCloseMikeFolder = () => {
+        this.setState({
+            isMikeFolderOpen: false
+        });
+    }
+
+    onOpenMikeFolder = () => {
+        this.setState({
+            isMikeFolderOpen: true
+        });
+    }
+
     componentDidMount() {
         setTimeout(() => {
             this.setState( {
@@ -55,12 +68,21 @@ class MainScreen extends Component {
 
     render() {
         let pd = { padding: "8px 0", cursor: "pointer", margin: "0 8px" };
-        let projectsFile = null;
+        let projectsFile;
+        let aboutMikeFile;
 
         if (this.state.isFolderOpen) {
             projectsFile = (
                 <ProjectsFolder
                     onClose={this.onCloseFolder}
+                />
+            );
+        }
+
+        if (this.state.isMikeFolderOpen) {
+            aboutMikeFile = (
+                <AboutMike
+                    onClose={this.onCloseMikeFolder}    
                 />
             );
         }
@@ -102,12 +124,14 @@ class MainScreen extends Component {
                             <div className="main-icon-overlay"></div>
                         </div>
                     </Draggable>
-                    <AboutMike/>
+
+                    
+                    {aboutMikeFile}
                     {projectsFile}
                     <WelcomeConsole/>
 
                     <Dock>
-                        <img style={pd} src={meImage} />
+                        <img style={pd} onClick={this.onOpenMikeFolder} src={meImage} />
                         <img style={pd} onClick={this.onOpenFolder} src={folderImage} />
                         <img style={pd} src={contactImage} />
                         <img style={pd} onClick={() => (window.open('https://github.com/iamMikeLe/'))} src={ghImage} />
