@@ -12,6 +12,8 @@ import Preloader from "./Preloader/Preloader";
 import ProjectsFolder from "../../../components/ProjectsFolder/ProjectsFolder";
 import AboutMike from "../../../components/AboutMike/AboutMike";
 import WelcomeConsole from "../../../components/WelcomeConsole/WelcomeConsole";
+import ContactMe from "../../../components/ContactMe/ContactMe";
+
 //images
 import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";
@@ -128,6 +130,7 @@ class MainScreen extends Component {
                     
                     {aboutMikeFile}
                     {projectsFile}
+                    <ContactMe/>
                     <WelcomeConsole/>
 
                     <Dock>
