@@ -27,7 +27,7 @@ class ResumeRight extends Component {
                                             </div>
 
                                             <div className="AboutMike-resume-item">
-                                                <div className="AboutMike-resume-item-content">
+                                                <div className="AboutMike-resume-item-content AboutMike-resume-border">
 
                                                     <div className="AboutMike-resume-item-date">
                                                         2013 - Present
@@ -42,7 +42,7 @@ class ResumeRight extends Component {
                                                     <p>Collaborate with creative and development teams on the execution of ideas.</p>
                                                 </div>
 
-                                                <div className="AboutMike-resume-item-content">
+                                                <div className="AboutMike-resume-item-content AboutMike-resume-border">
 
                                                     <div className="AboutMike-resume-item-date">
                                                         2013 - Present
@@ -59,7 +59,7 @@ class ResumeRight extends Component {
                                                     <p>Collaborate with creative and development teams on the execution of ideas.</p>
                                                 </div>
 
-                                                <div className="AboutMike-resume-item-content">
+                                                <div className="AboutMike-resume-item-content ">
 
                                                     <div className="AboutMike-resume-item-date">
                                                         2013 - Present
@@ -89,7 +89,7 @@ class ResumeRight extends Component {
                                             </div>
 
                                             <div className="AboutMike-resume-item">
-                                                <div className="AboutMike-resume-item-content">
+                                                <div className="AboutMike-resume-item-content AboutMike-resume-border">
 
                                                     <div className="AboutMike-resume-item-date">
                                                         2013 - Present
@@ -104,7 +104,7 @@ class ResumeRight extends Component {
                                                     <p>Collaborate with creative and development teams on the execution of ideas.</p>
                                                 </div>
 
-                                                <div className="AboutMike-resume-item-content">
+                                                <div className="AboutMike-resume-item-content AboutMike-resume-border">
 
                                                     <div className="AboutMike-resume-item-date">
                                                         2013 - Present

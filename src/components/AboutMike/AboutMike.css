@@ -566,7 +566,7 @@
 }
 
 
-.AboutMike-resume-item-content:after{
+.AboutMike-resume-border:after{
     left: -20px !important;
     content: '';
     position: absolute;
