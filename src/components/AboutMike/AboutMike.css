@@ -1,0 +1,649 @@
+.AboutMike-card{
+    width: 480px;
+    height: 600px;
+    z-index: 20;
+    border-radius: 4px;
+    background-color: beige;
+    position: relative;
+}
+
+.AboutMike-card:before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 4px 0;
+    -moz-border-radius: 0 0 4px 0;
+    -webkit-border-radius: 0 0 4px 0;
+    -khtml-border-radius: 0 0 4px 0;
+}
+
+.AboutMike-card-profile{
+    padding: 210px 50px 50px 50px;
+    position: relative;
+    height: 340px;
+    background: #ffffff;
+    text-align: center;
+    z-index: 10;
+    border-radius: 4px;
+    background-color:white;
+}
+
+.AboutMike-card-cover{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #626262;
+    background-image: url("../../images/cardCover.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+.AboutMike-card-cover:before{
+    content: '';
+    position: absolute;
+    left: -25%;
+    bottom: -198px;
+    width: 700px;
+    height: 200px;
+    background: #ffffff;
+    transform: rotate(12deg);
+}
+.AboutMike-card-cover:after{
+    content: '';
+    position: absolute;
+    right: -25%;
+    bottom: -198px;
+    width: 700px;
+    height: 200px;
+    background: #ffffff;
+    transform: rotate(-6deg);
+}
+
+.AboutMike-card-image{
+    margin: 0 0 20px 0;
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
+
+.AboutMike-card-image img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -khtml-border-radius: 100%;
+}
+
+
+.AboutMike-card-image:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(-45deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -khtml-border-radius: 100%;
+}
+
+.AboutMike-card-title{
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    color: #171717;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+
+.AboutMike-card-subtitle{
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    color: #0856c1;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.AboutMike-card-buttons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+}
+
+.AboutMike-card-buttons:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-card-buttons .lnk{
+    position: relative;
+    float: left;
+    cursor: pointer;
+    width: 50%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 12px;
+    color: #171717;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+}
+
+.AboutMike-card-buttons .lnkBefore:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-card-buttons-text{
+    font-weight: 600;
+}
+
+.AboutMike-card-about{
+    height: 570px;
+    width: 576px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 475px;
+    top: 40px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.AboutMike-card-about-inner{
+    padding: 30px 30px 30px 60px;
+    position: relative;
+    width: auto;
+    height: 510px;
+}
+
+.AboutMike-card-about-content{
+    margin: 0 0 60px 0;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+.AboutMike-card-about-title{
+    margin: 0 0 15px 0;
+    padding: 0 0 5px 0;
+    position: relative;
+    font-size: 17px;
+    color: #171717;
+    line-height: 21px;
+    font-weight: 500;
+    box-sizing: border-box;
+    display: block;
+}
+
+.AboutMike-card-about-title:before{
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: -moz-linear-gradient(-45deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    /* z-index: -1; */
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -khtml-border-radius: 30px;
+}
+
+.AboutMike-card-about-title:after{
+    content: '';
+    position: absolute;
+    left: -60px;
+    bottom: -15px;
+    width: 95%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-row{
+    margin: 0 -20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.AboutMike-col{
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.AboutMike-col:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-text-box{
+    box-sizing: border-box;
+    display: block;
+    color:#626262;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.AboutMike-info-list{
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.AboutMike-info-list ul{
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+
+}
+
+.AboutMike-info-list ul li{
+    display: inline-block;
+    width: 48%;
+    line-height: 1.6;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(98, 98, 98);
+}
+
+.AboutMike-info-list ul li strong{
+    display: inline-block;
+    font-size: 13px;
+    color: #171717;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.AboutMike-funFacts-row {
+    margin: 0 0 60px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.AboutMike-funFacts-title {
+    margin: 0 0 15px 0;
+    padding: 0 0 5px 0;
+    position: relative;
+    font-size: 17px;
+    color: #171717;
+    line-height: 21px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+
+.AboutMike-funFacts-title:before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: -moz-linear-gradient(-45deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(8, 86, 193, 0.4) 0%, rgba(8, 86, 193, 0.01) 100%);
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -khtml-border-radius: 30px;
+}
+
+.AboutMike-funFacts-title:after {
+    content: '';
+    position: absolute;
+    left: -60px;
+    bottom: -15px;
+    width: 95%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-funFacts-content {
+    margin: 0 -20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.AboutMike-funFacts-content-1 {
+    width: 24.999%;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+.AboutMike-funFacts-content-1:before {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-funFacts-content-2 {
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.AboutMike-funFacts-content-3 {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 32px;
+    color: #0856c1;
+    box-sizing: border-box;
+}
+
+
+.AboutMike-funFacts-content-4 {
+    margin: 0;
+    font-size: 13px;
+    color: #171717;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.AboutMike-funFacts-icon{
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 32px;
+    color: #0856c1;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-col{
+    width: 49.998%;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-col:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-resume-title{
+    padding: 0 0 20px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-icon{
+    position: relative;
+    top: -15px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    color: #0856c1;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-name{
+    margin: 0 0 0 40px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #171717;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-title:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    left: -20px;
+}
+
+.AboutMike-resume-item{
+    box-sizing: border-box;
+}
+
+
+.AboutMike-resume-item-content{
+    position: relative;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+}
+
+
+.AboutMike-resume-item-date{
+    color: #0856c1;
+    margin: 0 0 10px 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 18px;
+    color: #d8dbe2;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-item-date:before{
+    background: #0856c1;
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    background: #d8dbe2;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -khtml-border-radius: 9px;
+}
+
+.AboutMike-resume-item-name{
+    margin: 0;
+    font-size: 13px;
+    color: #171717;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    height: 20px;
+}
+
+.AboutMike-resume-item-company{
+    margin: 0 0 10px 0;
+    font-size: 11px;
+    color: #999999;
+    font-weight: 300;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-item p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
+    color: #626262;
+}
+
+
+.AboutMike-resume-border:after{
+    left: -20px !important;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-resume-col ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.AboutMike-resume-col ul li{
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.AboutMike-skill-name{
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #626262;
+    box-sizing: border-box;
+}
+
+.AboutMike-skill-progress{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #d8dbe2;
+    box-sizing: border-box;
+}
+
+.AboutMike-skill-percentage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: #0856c1;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    box-sizing: border-box;
+}
+
+.AboutMike-skill-li-border:after{
+    left: -20px !important;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.AboutMike-nav-color{
+    color:#0856c1 !important;
+}
+
+.AboutMike-card-buttons .lnk:hover{
+    color:#0856c1 !important;
+}

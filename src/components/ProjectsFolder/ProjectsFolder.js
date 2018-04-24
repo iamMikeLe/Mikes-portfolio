@@ -24,6 +24,7 @@ componentDidMount() {
         >
           <TitleBar className="folder-mover mover" title="Projects I worked on" controls onCloseClick={this.props.onClose} />
           <Segment/>
+
         </Window>
       </Draggable>
 

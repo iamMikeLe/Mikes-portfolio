@@ -10,23 +10,16 @@ import Typist from 'react-typist';
 //components
 import Preloader from "./Preloader/Preloader";
 import ProjectsFolder from "../../../components/ProjectsFolder/ProjectsFolder";
+import AboutMike from "../../../components/AboutMike/AboutMike";
 import WelcomeConsole from "../../../components/WelcomeConsole/WelcomeConsole";
 //images
 import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";
 import meImage from "../../../images/me.png";
 import aboutImage from "../../../images/about.png";
-import backgroundImage from "../../../images/background.jpg";
+import backgroundImage from "../../../images/backgroundCover.png";
 import inImage from "../../../images/in.png";
-import calcImage from "../../../images/calc.png";
 import ghImage from "../../../images/gh.png";
-
-//Pages
-/* import Home from "../../Components/Carousel/HomeCarousel"; */
-/* import Navigation from "../../components/Navigation/Navigation.js";
-import PageOne from "./PageOne/PageOne";
-import PageTwo from "./PageTwo/PageTwo";
- */
 
 const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`
@@ -36,19 +29,32 @@ const backgroundStyle = {
 
 class MainScreen extends Component {
     state = {
-        isOpen: false,
+        isFolderOpen: false,
+        isMikeFolderOpen: false,
         isLoaded: false
     }
 
     onCloseFolder = () => {
         this.setState({
-            isOpen: false
+            isFolderOpen: false
         });
     }
 
     onOpenFolder = () => {
         this.setState({
-            isOpen: true
+            isFolderOpen: true
+        });
+    }
+
+    onCloseMikeFolder = () => {
+        this.setState({
+            isMikeFolderOpen: false
+        });
+    }
+
+    onOpenMikeFolder = () => {
+        this.setState({
+            isMikeFolderOpen: true
         });
     }
 
@@ -62,12 +68,21 @@ class MainScreen extends Component {
 
     render() {
         let pd = { padding: "8px 0", cursor: "pointer", margin: "0 8px" };
-        let projectsFile = null;
+        let projectsFile;
+        let aboutMikeFile;
 
-        if (this.state.isOpen) {
+        if (this.state.isFolderOpen) {
             projectsFile = (
                 <ProjectsFolder
                     onClose={this.onCloseFolder}
+                />
+            );
+        }
+
+        if (this.state.isMikeFolderOpen) {
+            aboutMikeFile = (
+                <AboutMike
+                    onClose={this.onCloseMikeFolder}    
                 />
             );
         }
@@ -82,7 +97,7 @@ class MainScreen extends Component {
                         <Typist>
                             <span>Loading Mike's portfolio...</span>
                             {/* <Typist.Backspace count={23} delay={200} />
-        <span>Loading Mikes portfolio</span> */}
+                                <span>Loading Mikes portfolio</span> */}
                         </Typist>
                     </Text>
                 </div>
@@ -110,11 +125,13 @@ class MainScreen extends Component {
                         </div>
                     </Draggable>
 
+                    
+                    {aboutMikeFile}
                     {projectsFile}
                     <WelcomeConsole/>
 
                     <Dock>
-                        <img style={pd} src={meImage} />
+                        <img style={pd} onClick={this.onOpenMikeFolder} src={meImage} />
                         <img style={pd} onClick={this.onOpenFolder} src={folderImage} />
                         <img style={pd} src={contactImage} />
                         <img style={pd} onClick={() => (window.open('https://github.com/iamMikeLe/'))} src={ghImage} />

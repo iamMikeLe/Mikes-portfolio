@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { SegmentedControl, SegmentedControlItem, Text } from 'react-desktop/macOs';
 import WebProjects from "./WebProjects/WebProjects";
+import PersonalProjects from "./PersonalProjects/PersonalProjects";
 
 
 export default class extends Component {
@@ -23,8 +24,8 @@ export default class extends Component {
 
     renderItems() {
         return [
-            this.renderItem(1, 'Web', <Text><WebProjects/></Text>),
-            this.renderItem(2, 'Mobile', <Text>Content 2</Text>),
+            this.renderItem(1, 'Client', <Text><WebProjects/></Text>),
+            this.renderItem(2, 'Personal', <Text><PersonalProjects/></Text>),
         ];
     }
 
