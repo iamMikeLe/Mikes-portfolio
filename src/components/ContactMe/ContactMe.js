@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Window, TitleBar, SegmentedControl, SegmentedControlItem, Text } from 'react-desktop/macOs';
+import { Window, TitleBar, SegmentedControl, SegmentedControlItem, Text, TextInput, Label, Box } from 'react-desktop/macOs';
 import Draggable, { DraggableCore } from 'react-draggable';
-/* import "./AboutMike.css"; */
+
+import "./ContactMe.css";
 
 
 
@@ -11,17 +12,60 @@ import Draggable, { DraggableCore } from 'react-draggable';
 export default class ContactMe extends Component {
     render() {
         return (
-            <Draggable handle=".folder-mover" bounds="parent" defaultPosition={{ x: 15, y: 15 }}>
+            <Draggable handle=".folder-mover" bounds="parent" defaultPosition={{ x: 45, y: 45 }}>
                 <Window
                     className="project-folder-style"
                     chrome
-                    height="675px"
+                    height="375px"
                     padding="25px"
-                    width="1100px"
+                    width="600px"
                 >
-                    <TitleBar className="folder-mover mover" title="Mike Le" controls onCloseClick={this.props.onClose} />
+                    <TitleBar className="folder-mover mover" controls onCloseClick={this.props.onClose} />
                     <div className="AboutMike-window">
-                        Hello
+                    
+                        <div className="CM-title">Contact Form</div>
+
+
+                        <div className="CM-row">
+                            <div className="CM-col">
+                                <div className="CM-contact-form">
+                                    {/*start form*/}
+                                    <form id="cform" action="https://formspree.io/iam@mike-le.info"
+                                    method="POST">
+                                        <div className="CM-row">
+
+                                            <div className="CM-col-small">
+                                                <div className="CM-group-val">
+                                                    <input type="text" name="name" placeholder="Name"/>
+                                                </div>
+                                            </div>
+
+                                            <div className="CM-col-small">
+                                                <div className="CM-group-val">
+                                                    <input type="email" name="_replyto" placeholder="Email Address"/>
+                                                </div>
+                                            </div>
+
+
+                                            <div className="CM-col-bg">
+                                                <div className="CM-group-val">
+                                                    <textarea name="message" placeholder="Your Message"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="CM-align-left">
+                                        <button className="CM-button" type="submit" value="Send">
+                                            Send Message
+                                        </button>
+                                            
+                                        </div>
+                                    </form>
+                                    {/*end form*/}
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
 
                 </Window>

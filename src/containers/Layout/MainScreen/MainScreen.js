@@ -14,6 +14,7 @@ import AboutMike from "../../../components/AboutMike/AboutMike";
 import WelcomeConsole from "../../../components/WelcomeConsole/WelcomeConsole";
 import ContactMe from "../../../components/ContactMe/ContactMe";
 
+
 //images
 import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";
@@ -33,7 +34,20 @@ class MainScreen extends Component {
     state = {
         isFolderOpen: false,
         isMikeFolderOpen: false,
+        isContactMikeOpen: false,
         isLoaded: false
+    }
+
+    onCloseCM = () => {
+        this.setState({
+            isContactMikeOpen: false
+        });
+    }
+
+    onOpenCM = () => {
+        this.setState({
+            isContactMikeOpen: true
+        });
     }
 
     onCloseFolder = () => {
@@ -72,6 +86,16 @@ class MainScreen extends Component {
         let pd = { padding: "8px 0", cursor: "pointer", margin: "0 8px" };
         let projectsFile;
         let aboutMikeFile;
+        let ContactMike;
+
+
+        if (this.state.isContactMikeOpen) {
+            ContactMike = (
+                <ContactMe
+                onClose={this.onCloseCM}
+                />
+            );
+        }
 
         if (this.state.isFolderOpen) {
             projectsFile = (
@@ -130,13 +154,13 @@ class MainScreen extends Component {
                     
                     {aboutMikeFile}
                     {projectsFile}
-                    <ContactMe/>
+                    {ContactMike}
                     <WelcomeConsole/>
 
                     <Dock>
                         <img style={pd} onClick={this.onOpenMikeFolder} src={meImage} />
                         <img style={pd} onClick={this.onOpenFolder} src={folderImage} />
-                        <img style={pd} src={contactImage} />
+                        <img style={pd} onClick={this.onOpenCM} src={contactImage} />
                         <img style={pd} onClick={() => (window.open('https://github.com/iamMikeLe/'))} src={ghImage} />
                     </Dock>
                 </div>
