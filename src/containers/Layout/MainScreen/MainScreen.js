@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import Draggable from 'react-draggable';
 /* import { Route, Switch } from "react-router-dom"; */
@@ -20,15 +19,8 @@ import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";
 import meImage from "../../../images/me.png";
 import aboutImage from "../../../images/about.png";
-import backgroundImage from "../../../images/backgroundCover.png";
 import inImage from "../../../images/in.png";
 import ghImage from "../../../images/gh.png";
-
-const backgroundStyle = {
-    backgroundImage: `url(${backgroundImage})`
-    /* backgroundColor: "#323437" */
-};
-
 
 class MainScreen extends Component {
     state = {
@@ -133,7 +125,7 @@ class MainScreen extends Component {
 
         if (this.state.isLoaded) {
             mainScreenElements = (
-                <div className="main-window" style={backgroundStyle}>
+                <div className="main-window">
 
                     <Draggable bounds="parent">
                         <div className="main-icons main-icons-me" onDoubleClick={() => (window.open('https://www.linkedin.com/in/iammikele/'))}>
