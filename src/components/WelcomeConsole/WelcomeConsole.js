@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Window, TitleBar, Text } from 'react-desktop/macOs';
-import Draggable, { DraggableCore } from 'react-draggable';
+import { Window, TitleBar } from 'react-desktop/macOs';
+import Draggable from 'react-draggable';
 import Typist from 'react-typist';
 import "./WelcomeConsole.css"
 

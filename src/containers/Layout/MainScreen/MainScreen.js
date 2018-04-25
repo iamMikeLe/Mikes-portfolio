@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Draggable, { DraggableCore } from 'react-draggable';
+import Draggable from 'react-draggable';
 /* import { Route, Switch } from "react-router-dom"; */
 import "./MainScreen.css";
 import { Text } from 'react-desktop/macOs';
@@ -158,10 +158,10 @@ class MainScreen extends Component {
                     <WelcomeConsole/>
 
                     <Dock>
-                        <img style={pd} onClick={this.onOpenMikeFolder} src={meImage} />
-                        <img style={pd} onClick={this.onOpenFolder} src={folderImage} />
-                        <img style={pd} onClick={this.onOpenCM} src={contactImage} />
-                        <img style={pd} onClick={() => (window.open('https://github.com/iamMikeLe/'))} src={ghImage} />
+                        <img alt="Mike" style={pd} onClick={this.onOpenMikeFolder} src={meImage} />
+                        <img alt="Projects" style={pd} onClick={this.onOpenFolder} src={folderImage} />
+                        <img alt="Contact Form" style={pd} onClick={this.onOpenCM} src={contactImage} />
+                        <img alt="GitHub" style={pd} onClick={() => (window.open('https://github.com/iamMikeLe/'))} src={ghImage} />
                     </Dock>
                 </div>
             );

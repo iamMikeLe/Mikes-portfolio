@@ -23,7 +23,7 @@ class ResumeRight extends Component {
                                         <div className="AboutMike-resume-col">
                                             <div className="AboutMike-resume-title">
                                                 <div className="AboutMike-resume-icon">
-                                                    <img src={WorkPicture}  />
+                                                    <img alt="Work" src={WorkPicture}  />
                                                 </div>
                                                 <div className="AboutMike-resume-name">
                                                     Experience
@@ -85,7 +85,7 @@ class ResumeRight extends Component {
                                         <div className="AboutMike-resume-col">
                                             <div className="AboutMike-resume-title">
                                                 <div className="AboutMike-resume-icon">
-                                                    <img src={StudyPicture} />
+                                                    <img alt="Study" src={StudyPicture} />
                                                 </div>
                                                 <div className="AboutMike-resume-name">
                                                     Education
@@ -147,7 +147,7 @@ class ResumeRight extends Component {
                                     <div className="AboutMike-resume-col">
                                     <div className="AboutMike-resume-title">
                                         <div className="AboutMike-resume-icon">
-                                            <img src={ProjectPicture} width="30px" />
+                                            <img alt="Skills" src={ProjectPicture} width="30px" />
                                         </div>
                                         <div className="AboutMike-resume-name">
                                             Skills
@@ -197,7 +197,7 @@ class ResumeRight extends Component {
                                         <div className="AboutMike-resume-col">
                                             <div className="AboutMike-resume-title">
                                                 <div className="AboutMike-resume-icon">
-                                                    <img src={OtherSkillsPicture}/>
+                                                    <img alt="Other Skills" src={OtherSkillsPicture}/>
                                                 </div>
                                                 <div className="AboutMike-resume-name">
                                                     Other Skills

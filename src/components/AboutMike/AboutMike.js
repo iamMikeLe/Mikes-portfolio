@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Window, TitleBar, SegmentedControl, SegmentedControlItem, Text } from 'react-desktop/macOs';
-import Draggable, { DraggableCore } from 'react-draggable';
+import { Window, TitleBar } from 'react-desktop/macOs';
+import Draggable from 'react-draggable';
 import "./AboutMike.css";
 
 import ResumeRight from "./ResumeRight/ResumeRight"
@@ -62,7 +62,7 @@ export default class AboutMike extends Component {
                             <div className="AboutMike-card-profile">
                                 <div className="AboutMike-card-cover"></div>
                                 <div className="AboutMike-card-image">
-                                    <img src={ProfilePicture} width="140px" height="140px" />
+                                    <img alt="Profile" src={ProfilePicture} width="140px" height="140px" />
                                 </div>
                                 <div className="AboutMike-card-title">Mike Le</div>
                                 <div className="AboutMike-card-subtitle">Front-End Developer</div>

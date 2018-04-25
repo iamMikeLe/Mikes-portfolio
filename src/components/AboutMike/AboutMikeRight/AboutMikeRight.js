@@ -54,12 +54,12 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={ProjectPicture} width="40px" />
+                                                <img alt="Projects" src={ProjectPicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
                                             18 Projects worked on
-                                                </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={PatiencePicture} width="40px" />
+                                                <img alt="Patience" src={PatiencePicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
@@ -84,7 +84,7 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={LanguagePicture} width="40px" />
+                                                <img alt="Languages" src={LanguagePicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
@@ -99,7 +99,7 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={CatPicture} width="40px" />
+                                                <img alt="Cat" src={CatPicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
@@ -120,7 +120,7 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={PianoPicture} width="40px" />
+                                                <img alt="Piano" src={PianoPicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
@@ -135,7 +135,7 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={BasketballPicture} width="40px" />
+                                                <img alt="Basketball" src={BasketballPicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
@@ -150,7 +150,7 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={SoccerPicture} width="40px" />
+                                                <img alt="Soccer" src={SoccerPicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
@@ -165,7 +165,7 @@ class AboutMikeRight extends Component {
 
                                         <div className="AboutMike-funFacts-content-3">
                                             <div className="AboutMike-funFacts-icon">
-                                                <img src={GamingPicture} width="40px" />
+                                                <img alt="Gaming" src={GamingPicture} width="40px" />
                                             </div>
                                         </div>
                                         <div className="AboutMike-funFacts-content-4">
