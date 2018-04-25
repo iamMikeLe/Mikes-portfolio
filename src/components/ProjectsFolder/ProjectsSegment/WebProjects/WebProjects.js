@@ -9,6 +9,16 @@ import ViewvoScreen from "../../../../images/viewvoScreen.png";
 import Fibodo from "../../../../images/fibodo.png";
 import FibodoScreen from "../../../../images/fibodoScreen.png";
 
+import Amplify from "../../../../images/amplify.png";
+import AmplifyScreen from "../../../../images/amplifyScreen.png";
+
+import Parlour from "../../../../images/parlour.png";
+import ParlourScreen from "../../../../images/parlourScreen.png";
+
+import Candc from "../../../../images/candc.png";
+import CandcScreen from "../../../../images/candcScreen.png";
+
+
 import Moonrok from "../../../../images/moonrok.png";
 import MoonrokScreen from "../../../../images/moonrokScreen.png";
 
@@ -28,27 +38,48 @@ class WebProjects extends Component {
         projects: [
             {   title: "ViewVo",
                 link: "http://viewvo.com",
-                description: "ViewVo is a Web Application that provides job shadowing opportunities. Users search different kinds of jobs and activities, book time with a professional mentor and follow him for agreed duration of time to learn from him/her. In case you are a professional, who would like to pass knowledge to someone else. You can apply to be a mentor, Make some money or choose to donate it to Charity!" },
+                description: "ViewVo is a Web Application that provides job shadowing opportunities. Users search different kinds of jobs and activities, book time with a professional mentor and follow him/her for agreed duration of time to learn from him/her. In case you are a professional, who would like to pass knowledge to someone else. You can apply to be a mentor, make some money or choose to donate it to Charity!" 
+            },
             { 
                 title: "Fibodo",
                 link: "http://fibodo.com",
-                description: "I worked on Fibodo IOS application as a Project Manager. Fibodo is a sport oriented app for users looking for activities around them. They can search and book activities, connect and chat with organizers and much more!" },
+                description: "Fibodo is a Web/Mobile application that helps manage and promote your business. You can sign up and use booking management platform to grow/promote your business by creating activities, which will be displayed to clients using the app and thanks to easy to use platform, clients can FInd, BOok and DO activities!" 
+            },
+            { 
+                title: "Amplify",
+                link: "http://amplify.me.uk",
+                description: "Do you need to speak in front of a huge crowd, but you are too scared and your voice trembles too much? If yes, Amplify company might be the right solution for you. They help clients to build their brand, tell their story and excite their audiences." 
+            },
+            { 
+                title: "Parlour",
+                link: "https://parlourkensal.com",
+                description: "If you are in London and hungry and would like to pick a dish from Full English menu, visit Parlour Restaurant and I guarantee you won't leave unsatisfied! You can make a reservation on their website." 
+            },
+            { 
+                title: "Caiger&Co",
+                link: "http://caigerandcocatering.co.uk",
+                description: "Caiger&Co. Catering provides catering for a variety of events from small dinners and lunch parties, to large events and weddings.  Their food quality is high-end and they have a large menu you can choose from. Make sure to visit their website if you are hosting an event!" 
+            },
             { 
                 title: "MoonROK",
                 link: "http://www.moonrok.com",
-                description: "If you are searching for the latest news of K-Pop, Moonrok is your website!" },
+                description: "MoonRok is a web application that helps K-Pop fans keep track of the latest K-Pop news. You can find latest K-Pop singles, world tours or browse songs, artists, albums, etc..." 
+            },
             { 
                 title: "DMP Dental",
                 link: "http://dmpdental.us",
-                description: "DMP Dental is a website selling high-quality dental materials. For more info, visit their website by clicking the link above." },
+                description: "DMP Dental is a company selling high-quality dental materials. Visit their website for more info." 
+            },
             { 
                 title: "Solis Marine",
                 link: "http://solis-marine.com",
-                description: "Solis Marine is a Company website. Users can find information about their business. One of their specialties is providing independent expert advice on maritime and shipping incidents." },
+                description: "Solis Marine was established to provide independent expert advice on maritime and shipping incidents. Visit their website for more info." 
+            },
             { 
                 title: "Pemberton Capital",
                 link: "http://pembertoncapital.co.uk",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." }
+                description: "Pemberton Capital is a special situations investor in UK Businesses. They make controlling investments exclusively in small and medium sized businesses in the UK. Their goal is to apply sound financial and management inputs to facilitate profitable growth.  " 
+            }
         ]
     }
 
@@ -74,23 +105,41 @@ class WebProjects extends Component {
 
             case 2:
             this.setState({
-                selectedScreen: MoonrokScreen
+                selectedScreen: AmplifyScreen
             });
             break;
 
             case 3:
             this.setState({
-                selectedScreen: DmpScreen
+                selectedScreen: ParlourScreen
             });
             break;
 
             case 4:
             this.setState({
-                selectedScreen: SolisScreen
+                selectedScreen: CandcScreen
             });
             break;
 
             case 5:
+            this.setState({
+                selectedScreen: MoonrokScreen
+            });
+            break;
+
+            case 6:
+            this.setState({
+                selectedScreen: DmpScreen
+            });
+            break;
+
+            case 7:
+            this.setState({
+                selectedScreen: SolisScreen
+            });
+            break;
+
+            case 8:
             this.setState({
                 selectedScreen: PembertonScreen
             });
@@ -111,37 +160,62 @@ class WebProjects extends Component {
         return (
             <div className="web-projects-wrapper">
                 <div className="web-projects-icon-selector">
-                    <div className="web-projects-icons" onClick={() => { this.onSelect(0) }}>
-                        <img src={ViewVo} alt="View Vo" height="50" width="50" />
-                        <div className="web-projects-title">
-                            <p>ViewVo</p>
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(0) }}>
+                            <img src={ViewVo} alt="View Vo" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>ViewVo</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="web-projects-icons" onClick={() => { this.onSelect(1) }}>
-                        <img src={Fibodo} alt="Fibodo" height="50" width="50" />
-                        <div className="web-projects-title">
-                            <p>Fibodo</p>
-                        </div></div>
-                    <div className="web-projects-icons" onClick={() => { this.onSelect(2) }}>
-                        <img src={Moonrok} alt="Moonrok" height="50" width="50" />
-                        <div className="web-projects-title">
-                            <p>MoonROK</p>
-                        </div></div>
-                    <div className="web-projects-icons" onClick={() => { this.onSelect(3) }}>
-                        <img src={Dmp} alt="DMP Dental" height="50" width="50" />
-                        <div className="web-projects-title">
-                            <p>DMP</p>
-                        </div></div>
-                    <div className="web-projects-icons" onClick={() => { this.onSelect(4) }}>
-                        <img src={Solis} alt="Solis" height="50" width="50" />
-                        <div className="web-projects-title">
-                            <p>S. Marine</p>
-                        </div></div>
-                    <div className="web-projects-icons" onClick={() => { this.onSelect(5) }}>
-                        <img src={Pemberton} alt="Pemberton" height="50" width="50" />
-                        <div className="web-projects-title">
-                            <p>P. Capital</p>
-                    </div></div>
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(1) }}>
+                            <img src={Fibodo} alt="Fibodo" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>Fibodo</p>
+                            </div>
+                        </div>
+                        {/*edit*/}
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(2) }}>
+                            <img src={Amplify} alt="Fibodo" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>Amplify</p>
+                            </div>
+                        </div>
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(3) }}>
+                            <img src={Parlour} alt="Fibodo" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>Parlour</p>
+                            </div>
+                        </div>
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(4) }}>
+                            <img src={Candc} alt="Fibodo" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>Caiger&Co</p>
+                            </div>
+                        </div>
+                        {/*end edit*/}
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(5) }}>
+                            <img src={Moonrok} alt="Moonrok" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>MoonROK</p>
+                            </div>
+                        </div>
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(6) }}>
+                            <img src={Dmp} alt="DMP Dental" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>DMP</p>
+                            </div>
+                        </div>
+                        <div className="web-projects-icons" onClick={() => { this.onSelect(7) }}>
+                            <img src={Solis} alt="Solis" height="50" width="50" />
+                            <div className="web-projects-title">
+                                <p>S. Marine</p>
+                            </div>
+                        </div>
+                            <div className="web-projects-icons" onClick={() => { this.onSelect(8) }}>
+                                <img src={Pemberton} alt="Pemberton" height="50" width="50" />
+                                <div className="web-projects-title">
+                                    <p>P. Capital</p>
+                            </div>
+                        </div>
                 </div>
                 <div className="web-projects-info">
                     <div className="web-projects-info-left">

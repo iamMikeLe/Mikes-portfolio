@@ -39,9 +39,11 @@ export default class WelcomeConsole extends Component {
                     <TitleBar className="console-mover" title="Welcome console" controls onCloseClick={this.consoleWindowHandler}/>
 
                     <Typist avgTypingSpeed={2000}>
-                        <span>Hello Visitor<br /></span>
+                        <span>Hello Visitor<br /><br />
+                        FYI: Website is still in development
+                        <br /><br /></span>
 
-                        <Typist.Delay ms={1000} />
+                        <Typist.Delay ms={1500} />
                         <span>Options you can find on the dock bellow: <br /> <br /></span>
 
                         <Typist.Delay ms={1000} />
@@ -55,8 +57,6 @@ export default class WelcomeConsole extends Component {
                     <br /><br />
                             <Typist.Delay ms={1500} />
                             NOTE: You can freely move windows around or close them if needed (you can move icons as well)
-                            <br />
-                            NOTE2: This portfolio still needs animation and responsiveness. Mike will work on it once he has more time.
                             </span>
                     </Typist>
 

@@ -46,7 +46,7 @@ class AboutMikeRight extends Component {
                         </div>
 
                         <div className="AboutMike-funFacts-row">
-                            <div className="AboutMike-funFacts-title">Random Fact</div>
+                            <div className="AboutMike-funFacts-title">Random Facts</div>
                             <div className="AboutMike-funFacts-content">
 
                                 <div className="AboutMike-funFacts-content-1">
