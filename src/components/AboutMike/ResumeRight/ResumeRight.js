@@ -129,7 +129,7 @@ class ResumeRight extends Component {
                                                     </div>
 
                                                     <div className="AboutMike-resume-item-name">
-                                                        Gymnazium
+                                                        Gymnazium Cheb
                                                     </div>
                                                     <p>IT subjects: Java SE, HTML, CSS</p>
                                                 </div>
@@ -164,19 +164,19 @@ class ResumeRight extends Component {
                                         <li className="AboutMike-skill-li-border">
                                             <div className="AboutMike-skill-name">Javascript(ES6)</div>
                                             <div className="AboutMike-skill-progress">
-                                                <div className="AboutMike-skill-percentage" style={{width: "93%"}}></div>
+                                                <div className="AboutMike-skill-percentage" style={{width: "90%"}}></div>
                                             </div>
                                         </li>
                                         <li className="AboutMike-skill-li-border">
                                             <div className="AboutMike-skill-name">React</div>
                                             <div className="AboutMike-skill-progress">
-                                                <div className="AboutMike-skill-percentage" style={{width: "90%"}}></div>
+                                                <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
                                             </div>
                                         </li>
                                         <li className="AboutMike-skill-li-border">
                                             <div className="AboutMike-skill-name">Redux</div>
                                             <div className="AboutMike-skill-progress">
-                                                <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
+                                                <div className="AboutMike-skill-percentage" style={{width: "80%"}}></div>
                                             </div>
                                         </li>
                                         <li>
@@ -208,13 +208,13 @@ class ResumeRight extends Component {
                                                 <li className="AboutMike-skill-li-border">
                                                     <div className="AboutMike-skill-name">Wordpress</div>
                                                     <div className="AboutMike-skill-progress">
-                                                        <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
+                                                        <div className="AboutMike-skill-percentage" style={{width: "80%"}}></div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div className="AboutMike-skill-name">MySQL</div>
                                                     <div className="AboutMike-skill-progress">
-                                                        <div className="AboutMike-skill-percentage" style={{width: "75%"}}></div>
+                                                        <div className="AboutMike-skill-percentage" style={{width: "65%"}}></div>
                                                     </div>
                                                 </li>
                                                 <li className="AboutMike-skill-li-border">
@@ -226,19 +226,19 @@ class ResumeRight extends Component {
                                                 <li className="AboutMike-skill-li-border">
                                                     <div className="AboutMike-skill-name">Photoshop</div>
                                                     <div className="AboutMike-skill-progress">
-                                                        <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
+                                                        <div className="AboutMike-skill-percentage" style={{width: "65%"}}></div>
                                                     </div>
                                                 </li>
                                                 <li className="AboutMike-skill-li-border">
                                                     <div className="AboutMike-skill-name">Illustrator</div>
                                                     <div className="AboutMike-skill-progress">
-                                                        <div className="AboutMike-skill-percentage" style={{width: "50%"}}></div>
+                                                        <div className="AboutMike-skill-percentage" style={{width: "45%"}}></div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div className="AboutMike-skill-name">UML</div>
                                                     <div className="AboutMike-skill-progress">
-                                                        <div className="AboutMike-skill-percentage" style={{width: "70%"}}></div>
+                                                        <div className="AboutMike-skill-percentage" style={{width: "65%"}}></div>
                                                     </div>
                                                 </li>
                                             </ul>

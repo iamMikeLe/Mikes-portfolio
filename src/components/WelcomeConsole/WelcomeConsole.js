@@ -51,7 +51,7 @@ export default class WelcomeConsole extends Component {
                             Contact Mike <br />
                             Mike's Github page
                     <br /><br />
-                            To download Mike's CV or visit his Linkedin, double click icons on the top left.
+                            To download Mike's CV or visit his LinkedIn, double click icons on the top left.
                     <br /><br />
                             <Typist.Delay ms={1500} />
                             NOTE: You can freely move windows around or close them if needed (you can move icons as well)
