@@ -68,7 +68,7 @@ export default class AboutMike extends Component {
                                 <div className="AboutMike-card-subtitle">Front-End Developer</div>
                                 <div className="AboutMike-card-buttons">
                                     <div className="lnk lnkBefore AboutMike-nav-color" onClick={this.aboutHandler}>
-                                        <span className="AboutMike-card-buttons-text">About Mike</span>
+                                        <span className="AboutMike-card-buttons-text">About Me</span>
                                         
                                     </div>
                                     <div className="lnk discover" onClick={this.resumeHandler}>

@@ -39,16 +39,9 @@ export default class WelcomeConsole extends Component {
                     <TitleBar className="console-mover" title="Welcome console" controls onCloseClick={this.consoleWindowHandler}/>
 
                     <Typist avgTypingSpeed={2000}>
-                        <span>Hello Visitor
-                        <br />
-                            I am Ekim, Mike's portfolio and I will be your guide!<br />
-                            My maker is still working on improving me, so currently I am not as awesome as I am going to be.
-                            <br />
-                            I still need content and better animation to reach perfection!
-                        <br /><br /></span>
+                        <span>Hello Visitor<br /></span>
 
-
-                        <Typist.Delay ms={1500} />
+                        <Typist.Delay ms={1000} />
                         <span>Options you can find on the dock bellow: <br /> <br /></span>
 
                         <Typist.Delay ms={1000} />
@@ -61,7 +54,10 @@ export default class WelcomeConsole extends Component {
                             To download Mike's CV or visit his Linkedin, double click icons on the top left.
                     <br /><br />
                             <Typist.Delay ms={1500} />
-                            NOTE: You can freely move windows around or close them if needed (you can move icons as well)</span>
+                            NOTE: You can freely move windows around or close them if needed (you can move icons as well)
+                            <br />
+                            NOTE2: This portfolio still needs animation and responsiveness. Mike will work on it once he has more time.
+                            </span>
                     </Typist>
 
                 </Window>

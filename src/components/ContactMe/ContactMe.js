@@ -23,7 +23,7 @@ export default class ContactMe extends Component {
                     <TitleBar className="folder-mover mover" controls onCloseClick={this.props.onClose} />
                     <div className="AboutMike-window">
                     
-                        <div className="CM-title">Contact Form</div>
+                        <div className="CM-title">Get in touch!</div>
 
 
                         <div className="CM-row">
