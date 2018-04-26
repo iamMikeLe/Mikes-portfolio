@@ -143,7 +143,7 @@ class MainScreen extends Component {
                     </Draggable>
 
                     <Draggable bounds="parent">
-                        <div className="main-icons main-icons-cv">
+                        <div className="main-icons main-icons-cv" onDoubleClick={() => (window.open('https://firebasestorage.googleapis.com/v0/b/mike-s-portfolip.appspot.com/o/mikes_resume.pdf?alt=media&token=b51a732e-8e9a-4b77-9d8b-25a0306168c4'))}>
                             <img src={aboutImage} alt="developer" height="50" width="50" />
                             <span><Text textAlign="center" size="14" color="white">CV</Text></span>
                             <div className="main-icon-overlay"></div>
