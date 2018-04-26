@@ -82,7 +82,9 @@ class MainScreen extends Component {
         let ContactMike;
 
             const backgroundStyle = {
-                backgroundImage: `url(${backgroundImage})`
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
                /* backgroundColor: "#323437" */
             };
 
