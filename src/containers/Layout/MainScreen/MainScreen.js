@@ -15,6 +15,7 @@ import ContactMe from "../../../components/ContactMe/ContactMe";
 
 
 //images
+import backgroundImage from "../../../images/backgroundCover.png";
 import folderImage from "../../../images/folder.png";
 import contactImage from "../../../images/contact.png";
 import meImage from "../../../images/me.png";
@@ -80,6 +81,10 @@ class MainScreen extends Component {
         let aboutMikeFile;
         let ContactMike;
 
+            const backgroundStyle = {
+                backgroundImage: `url(${backgroundImage})`
+               /* backgroundColor: "#323437" */
+            };
 
         if (this.state.isContactMikeOpen) {
             ContactMike = (
@@ -125,7 +130,7 @@ class MainScreen extends Component {
 
         if (this.state.isLoaded) {
             mainScreenElements = (
-                <div className="main-window">
+                <div className="main-window" style={backgroundStyle}>
 
                     <Draggable bounds="parent">
                         <div className="main-icons main-icons-me" onDoubleClick={() => (window.open('https://www.linkedin.com/in/iammikele/'))}>
