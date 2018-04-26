@@ -168,13 +168,13 @@ class ResumeRight extends Component {
                                             </div>
                                         </li>
                                         <li className="AboutMike-skill-li-border">
-                                            <div className="AboutMike-skill-name">React</div>
+                                            <div className="AboutMike-skill-name">React/Redux</div>
                                             <div className="AboutMike-skill-progress">
                                                 <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
                                             </div>
                                         </li>
                                         <li className="AboutMike-skill-li-border">
-                                            <div className="AboutMike-skill-name">Redux</div>
+                                            <div className="AboutMike-skill-name">REST API</div>
                                             <div className="AboutMike-skill-progress">
                                                 <div className="AboutMike-skill-percentage" style={{width: "80%"}}></div>
                                             </div>

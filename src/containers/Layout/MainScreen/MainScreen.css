@@ -94,3 +94,19 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 1130px) {
+    .mobile-warning{
+        display: block;
+    }
+
+    .Desktop{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1130px) {
+    .mobile-warning{
+        display: none;
+    }
+}

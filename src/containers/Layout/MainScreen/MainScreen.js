@@ -168,7 +168,12 @@ class MainScreen extends Component {
 
         return (
             <div>
-                {mainScreenElements}
+                <div className="Desktop">
+                    {mainScreenElements}
+                </div>
+                <div className="mobile-warning">
+                    Mike is still working on making this app responsive. For now please use your Desktop computer/laptop.
+                </div>
             </div>
         );
     };
