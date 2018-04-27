@@ -16,7 +16,6 @@ class AboutMikeRight extends Component {
 
     render() {
         return (
-            <div className="AboutMike-card-about">
                 <Scrollbars>
                     <div className="AboutMike-card-about-inner">
                         <div className="AboutMike-card-about-content">
@@ -179,7 +178,6 @@ class AboutMikeRight extends Component {
 
                     </div>
                 </Scrollbars>
-            </div>
         );
     };
 }

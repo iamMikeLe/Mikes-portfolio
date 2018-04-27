@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Window, TitleBar } from 'react-desktop/macOs';
 import Draggable from 'react-draggable';
+import Transition from 'react-transition-group/Transition';
 import "./AboutMike.css";
 
 import ResumeRight from "./ResumeRight/ResumeRight"
@@ -38,13 +39,20 @@ export default class AboutMike extends Component {
 
     render() {
         
-        let cardDisplay = null;
+       /*  let cardDisplay = null;
         if(this.state.aboutMike){
             cardDisplay = (<AboutMikeRight/>);
         }
         else{
             cardDisplay =(<ResumeRight/>);
-        }
+        } */
+
+        const transitionStyles = {
+            entering: { transform: "translate(-449px, 0)" },
+            entered:  { transform: "translate(0, 0)", opacity: 1 },
+            exiting:  { transform: "translate(-449px, 0)", opacity: 0 },
+
+        };
 
         return (
             <Draggable handle=".folder-mover" bounds="parent" defaultPosition={{ x: 15, y: 15 }}>
@@ -79,7 +87,22 @@ export default class AboutMike extends Component {
                             </div>
                         </div>
 
-                        {cardDisplay}
+                        <Transition in={this.state.aboutMike} timeout={700} mountOnEnter unmountOnExit>
+                            {state => (
+                                <div className="AboutMike-card-about" style={{
+                                    ...transitionStyles[state]
+                                }}><AboutMikeRight/></div>
+                            )}
+                        </Transition>
+                        
+                        <Transition in={!this.state.aboutMike} timeout={600} mountOnEnter unmountOnExit>
+                            {state => (
+                                <div className="AboutMike-card-about" style={{
+                                    ...transitionStyles[state]
+                                }}><ResumeRight/></div>
+                            )}
+                        </Transition>
+                        {/* cardDisplay */}
                     </div>
 
                 </Window>
