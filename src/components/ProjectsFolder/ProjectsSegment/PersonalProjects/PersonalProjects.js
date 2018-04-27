@@ -24,7 +24,7 @@ class PersonalProjects extends Component {
             { 
                 title: "Hangry",
                 link: "https://github.com/iamMikeLe/Hangry",
-                description: "Restaurant review web application build using React and google API to show nearby restaurant. Users can browse/Filter nearby restaurant, leave comments and review." 
+                description: "Restaurant review web application build using React and google API to show nearby restaurant. Users can browse/Filter nearby restaurant, leave comments and review. This project is still in development." 
             },
             
         ]

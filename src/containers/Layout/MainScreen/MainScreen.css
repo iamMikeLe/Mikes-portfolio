@@ -1,9 +1,12 @@
 .main-window {
-    background-color: gray;
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .main-icons {
@@ -89,5 +92,21 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .mobile-warning{
+        display: block;
+    }
+
+    .Desktop{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1130px) {
+    .mobile-warning{
+        display: none;
     }
 }
