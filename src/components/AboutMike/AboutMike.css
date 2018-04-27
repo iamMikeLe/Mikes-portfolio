@@ -181,10 +181,16 @@
     width: 576px;
     background-color: #ffffff;
     position: absolute;
+    opacity: 0;
     left: 475px;
     top: 40px;
     border-radius: 4px;
     text-align: left;
+    transition: transform .6s, opacity .6s linear;
+}
+
+.AboutMike-animate-card{
+    transform: translate(-400px,0);
 }
 
 .AboutMike-card-about-inner{

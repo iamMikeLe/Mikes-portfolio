@@ -11,8 +11,6 @@ class ResumeRight extends Component {
 
     render() {
         return (
-            <div className="AboutMike-card-about">
-
                 <Scrollbars>
                             <div className="AboutMike-card-about-inner">
                                 <div className="AboutMike-card-about-content">
@@ -247,9 +245,8 @@ class ResumeRight extends Component {
 
                                 </div>
                             </div>
-
+                            
                             </Scrollbars>
-                        </div>
         );
     };
 }
