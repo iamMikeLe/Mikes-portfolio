@@ -1,6 +1,7 @@
 .main-window {
     height: 100vh;
     width: 100%;
+    z-index: 20;
     background-size: cover;
     background-position: center;
     background: #E6DADA;  /* fallback for old browsers */
@@ -53,10 +54,11 @@
 .main-preloader {
     height: 100vh;
     width: 100%;
-    position: relative;
+    position: absolute;
     background-color: black;
-    z-index: 1000;
+    z-index: 99;
     text-align: center;
+    transition: visibility 1s, opacity 1s ease-out;
 }
 
 .main-preloader-container {
