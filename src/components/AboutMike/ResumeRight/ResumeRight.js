@@ -32,39 +32,7 @@ class ResumeRight extends Component {
                                                 <div className="AboutMike-resume-item-content AboutMike-resume-border">
 
                                                     <div className="AboutMike-resume-item-date AboutMike-active">
-                                                        Jun 2017 - Present
-                                                    </div>
-
-                                                    <div className="AboutMike-resume-item-name">
-                                                        Freelancer
-                                                    </div>
-
-                                                    
-
-                                                    <p>Freelance Front-End development and Project Management.</p>
-                                                </div>
-
-                                                <div className="AboutMike-resume-item-content AboutMike-resume-border">
-
-                                                    <div className="AboutMike-resume-item-date">
-                                                        Feb 2017 - Jun 2017
-                                                    </div>
-
-                                                    <div className="AboutMike-resume-item-name">
-                                                        Project Manager
-                                                    </div>
-
-                                                    <div className="AboutMike-resume-item-company">
-                                                        <a href="https://mbj.london" target="_blank" rel="noopener noreferrer">MBJ London</a>
-                                                    </div>
-
-                                                    <p>Managing development team to build web and mobile applications.</p>
-                                                </div>
-
-                                                <div className="AboutMike-resume-item-content ">
-
-                                                    <div className="AboutMike-resume-item-date">
-                                                        Dec 2015 - Feb 2017
+                                                        Jun 2018 - Present
                                                     </div>
 
                                                     <div className="AboutMike-resume-item-name">
@@ -72,10 +40,62 @@ class ResumeRight extends Component {
                                                     </div>
 
                                                     <div className="AboutMike-resume-item-company">
+                                                        <a href="https://www.zolar.de/" target="_blank" rel="noopener noreferrer">ZOLAR GmbH</a>
+                                                    </div>
+                                                    
+
+                                                    <p>Building Web Application using React/Redux</p>
+                                                </div>
+
+                                                <div className="AboutMike-resume-item-content AboutMike-resume-border">
+
+                                                    <div className="AboutMike-resume-item-date">
+                                                        Jun 2017 - Apr 2018
+                                                    </div>
+
+                                                    <div className="AboutMike-resume-item-name">
+                                                        Front-End Developer
+                                                    </div>
+
+                                                    <div className="AboutMike-resume-item-company">
+                                                        Freelancer
+                                                    </div>
+
+                                                    <p>Freelance Front-End development and Project Management.</p>
+                                                </div>
+
+                                                <div className="AboutMike-resume-item-content AboutMike-resume-border">
+
+                                                    <div className="AboutMike-resume-item-date">
+                                                        Sep 2015 - Jun 2017
+                                                    </div>
+
+                                                    <div className="AboutMike-resume-item-name">
+                                                        Front-end Developer
+                                                    </div>
+
+                                                    <div className="AboutMike-resume-item-company">
                                                         <a href="https://mbj.london" target="_blank" rel="noopener noreferrer">MBJ London</a>
                                                     </div>
 
-                                                    <p>Developing responsive websites base on provided designs.</p>
+                                                    <p>Developing responsive websites and apps base on provided designs.</p>
+                                                </div>
+
+                                                <div className="AboutMike-resume-item-content ">
+
+                                                    <div className="AboutMike-resume-item-date">
+                                                        Jun 2015 - Sep 2015
+                                                    </div>
+
+                                                    <div className="AboutMike-resume-item-name">
+                                                        IT Project Manager
+                                                    </div>
+
+                                                    <div className="AboutMike-resume-item-company">
+                                                        <a href="https://mbj.london" target="_blank" rel="noopener noreferrer">MBJ London</a>
+                                                    </div>
+
+                                                    <p>Managing development team to build web and mobile applications.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -93,8 +113,8 @@ class ResumeRight extends Component {
                                             <div className="AboutMike-resume-item">
                                                 <div className="AboutMike-resume-item-content AboutMike-resume-border">
 
-                                                    <div className="AboutMike-resume-item-date AboutMike-active">
-                                                        Jun 2017 - Present
+                                                    <div className="AboutMike-resume-item-date">
+                                                        2017 - 2019
                                                     </div>
 
                                                     <div className="AboutMike-resume-item-name">
@@ -103,7 +123,7 @@ class ResumeRight extends Component {
 
                                                     
 
-                                                    <p>Bachelor's Degree in Front-End Development.</p>
+                                                    <p>Bachelor's Degree in Web Development.</p>
                                                 </div>
 
                                                 <div className="AboutMike-resume-item-content AboutMike-resume-border">
@@ -117,7 +137,7 @@ class ResumeRight extends Component {
                                                     </div>
 
 
-                                                    <p>Coursework - React/Redux, JQuery, PHP, Git, Javascript, HTML5/CSS3, Project Management,...</p>
+                                                    <p>Coursework - React/Redux, React - TDD, NodeJS/ExpressJS, Git, Javascript, HTML5/CSS3, Project Management,...</p>
                                                 </div>
 
                                                 <div className="AboutMike-resume-item-content">
@@ -129,7 +149,7 @@ class ResumeRight extends Component {
                                                     <div className="AboutMike-resume-item-name">
                                                         Gymnazium Cheb
                                                     </div>
-                                                    <p>IT subjects: Java SE, HTML, CSS</p>
+                                                    <p>IT subjects: Java SE, HTML, CSS, Javascript</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -162,31 +182,31 @@ class ResumeRight extends Component {
                                         <li className="AboutMike-skill-li-border">
                                             <div className="AboutMike-skill-name">Javascript(ES6)</div>
                                             <div className="AboutMike-skill-progress">
-                                                <div className="AboutMike-skill-percentage" style={{width: "90%"}}></div>
+                                                <div className="AboutMike-skill-percentage" style={{width: "95%"}}></div>
                                             </div>
                                         </li>
                                         <li className="AboutMike-skill-li-border">
                                             <div className="AboutMike-skill-name">React/Redux</div>
                                             <div className="AboutMike-skill-progress">
-                                                <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
+                                                <div className="AboutMike-skill-percentage" style={{width: "90%"}}></div>
                                             </div>
                                         </li>
                                         <li className="AboutMike-skill-li-border">
-                                            <div className="AboutMike-skill-name">REST API</div>
+                                            <div className="AboutMike-skill-name">Styled-components</div>
                                             <div className="AboutMike-skill-progress">
-                                                <div className="AboutMike-skill-percentage" style={{width: "80%"}}></div>
+                                                <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <div className="AboutMike-skill-name">JQuery</div>
+                                            <div className="AboutMike-skill-name">NodeJs</div>
                                             <div className="AboutMike-skill-progress">
-                                                <div className="AboutMike-skill-percentage" style={{width: "85%"}}></div>
+                                                <div className="AboutMike-skill-percentage" style={{width: "55%"}}></div>
                                             </div>
                                         </li>
                                         <li className="AboutMike-skill-li-border">
-                                                    <div className="AboutMike-skill-name">Bootstrap</div>
+                                                    <div className="AboutMike-skill-name">ExpressJs</div>
                                                     <div className="AboutMike-skill-progress">
-                                                        <div className="AboutMike-skill-percentage" style={{width: "90%"}}></div>
+                                                        <div className="AboutMike-skill-percentage" style={{width: "45%"}}></div>
                                                     </div>
                                         </li>
                                     </ul>

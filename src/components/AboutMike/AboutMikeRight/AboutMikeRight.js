@@ -26,13 +26,25 @@ class AboutMikeRight extends Component {
                                 <div className="AboutMike-col">
                                     <div className="AboutMike-text-box">
                                         <p>
-                                            I am Hien Minh Le. For some "unknown" reason, my friends find it hard to remember, therefore, I was given a stage name “Mike” :).
-                                            I have rich experience in Web Development and Project Management.
+                                        I am a Full-Stack deveIoper with strong focus on Front-End development. <br/><br/>
+
+My journey to becoming a web developer started during High school where with the help of HTML, CSS, and Photoshop, I was considered dangerous enough to be able to create simple websites, manage blogs with the help of Wordpress (f.e. for gaming communities as I am a gamer myself) or even fix a toaster for my father.<br/><br/>
+
+Ever since then I started to be more interested in the area of Web Development and tried a bunch of stuff like Angular 1, JQuery, Java, Ruby until I decided to stop experimenting and start to focus more in one area which I enjoy.
+That is when I met React which became my favorite framework and with the help of tools like Redux and Back-end developer, I was able to build more scalable Web Applications.<br/><br/>
+
+Recently I decided to stop being dependent on a Back-end developer and learned Node.js with Express.js framework in order to become a Fullstack Developer and master the ability to turn coffee into bugs, which then creates more work for me that keeps me going and resulting in complete harmonious symbiosis.<br/><br/>
+
+When I am not working, I am usually home learning new programming stuff, play computer games with my friends, play the piano or even enjoy watching other people's misery on youtube.<br/><br/>
+
+I also really enjoy outdoor sports like soccer and basketball or something more slower stuff like a game of Chess or debating about the purpose of life.<br/><br/>
+
+Despite my interest in front-end development, I have been put into managing position several times, which gave me a lot of process/managing knowledge. 
                                                     </p>
                                     </div>
                                     <div className="AboutMike-info-list">
                                         <ul>
-                                            <li><strong>Age . . . . .</strong> 25</li>
+                                            <li><strong>Age . . . . .</strong> 27</li>
                                             <li><strong>Residence . . . . .</strong> Germany</li>
                                             <li><strong>Freelance . . . . .</strong> Available</li>
                                             <li><strong>Current Location . . . . .</strong> Berlin</li>
